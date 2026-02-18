@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Бухгалтерия | ОсОО | ИП | Обмен валют</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- WhatsApp -->
+<a href="#" id="whatsappLink" class="whatsapp">💬</a>
+
+<!-- NAV -->
+<nav class="nav">
+    <div class="logo">Apex Partners</div>
+    <div class="nav-actions">
+        <select id="lang">
+            <option value="ru">RU</option>
+            <option value="kg">KG</option>
+        </select>
+        <button id="themeToggle">🌙</button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+    <h1>Бухгалтерские услуги и обмен валют</h1>
+    <p>ОсОО • ИП • Ликвидация • Бишкек</p>
+    <a href="#contact" class="hero-btn">Получить консультацию</a>
+</header>
+
+<!-- SERVICES -->
+<section class="section">
+    <h2>Наши услуги</h2>
+    <div class="cards">
+        <div class="card">📊<h3 class="h3l">Бухгалтерия</h3><p>Комплекс услуг по юридической защите интересов бизнеса</p></div>
+        <div class="card">🏢<h3 class="h3l">ОсОО • ИП</h3><p>Открытие и закрытие</p></div>
+        <div class="card">👤<h3 class="h3l">Юридические услуги</h3><p>Комплекс услуг по юридической защите интересов бизнеса</p></div>
+        <div class="card">♻️<h3 class="h3l">Таможня и логистика</h3><p>Оформим грузы, подготовим декларации, обеспечим быструю и законную доставку</p></div>
+    </div>
+</section>
+
+<!-- WHY US -->
+<section class="section light">
+    <h2>Почему выбирают нас</h2>
+    <div class="why">
+        <div>✅ 5+ лет опыта</div>
+        <div>✅ Работаем официально</div>
+        <div>✅ Прозрачные цены</div>
+        <div>✅ Всегда на связи</div>
+    </div>
+</section>
+
+<!-- EXCHANGE -->
+<section class="section">
+    <h2>💱 Валютный калькулятор (Бишкек)</h2>
+
+    <div class="exchange-box">
+        <div class="rates">
+            <span>USD: <b id="rateUSD">87.50</b></span>
+            <span>EUR: <b id="rateEUR">102.60</b></span>
+            <span>RUB: <b id="rateRUB">1.12</b></span>
+        </div>
+
+        <div class="calc">
+            <input id="amount" type="number" placeholder="Сумма">
+            <select id="fromCurrency">
+                <option>USD</option><option>EUR</option><option>RUB</option><option>KGS</option>
+            </select>
+            →
+            <select id="toCurrency">
+                <option>KGS</option><option>USD</option><option>EUR</option><option>RUB</option>
+            </select>
+            <button onclick="convert()">Рассчитать</button>
+        </div>
+
+        <div id="result" class="result"></div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section light">
+    <h2>Связаться с нами</h2>
+    <form id="contactForm" class="form">
+        <input name="name" placeholder="Имя" required>
+        <input name="phone" placeholder="Телефон" required>
+        <textarea name="comment" placeholder="Комментарий"></textarea>
+        <button>Отправить в WhatsApp</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 Apex Partners • Бишкек
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
